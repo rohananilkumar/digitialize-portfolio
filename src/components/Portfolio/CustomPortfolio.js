@@ -14,6 +14,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { portfolioActions } from '../../store'
 import { useEffect } from 'react'
 import useHttp from '../../hooks/use-http'
+import { useHistory } from 'react-router-dom'
 
 
 const emptyValidate = (input) => {
@@ -31,6 +32,7 @@ const CustomPortfolio = (props) =>{
     const items = ['Your Image', 'What do you do','Certifications','Experience','Your featured works','Your Achievements']
 
     const dispatch = useDispatch();
+    dispatch(portfolioActions.loadOrderCount());
     
     const name = useInput(emptyValidate,'');
     const profession = useInput(emptyValidate,'');
@@ -45,7 +47,11 @@ const CustomPortfolio = (props) =>{
     const imageLink = useInput(emptyValidate,'');
 
     const order = useSelector(state=> state.orderingCustom);
+    const orderCount = useSelector(state=> state.orderCount);
+
     const http = useHttp('customOrders',{method:'POST'});
+
+    const history = useHistory();
 
     useEffect(async ()=>{
         if(order?.name){
@@ -55,6 +61,7 @@ const CustomPortfolio = (props) =>{
             }
             else{
                 alert('Your order has been received');
+                history.replace('/home/pre-designed')
             }
         }
     },[order]);
@@ -65,6 +72,11 @@ const CustomPortfolio = (props) =>{
         valid &= emptyValidate(profession.enteredValue);
         valid &= emptyValidate(contactNumber.enteredValue);
         valid &= emptyValidate(email.enteredValue);
+
+        if(orderCount>5){
+            return alert('Your previous orders have not been processed yet');
+        }
+
         if(!valid){ 
             alert('Inputs cannot be left blank');
             return;
@@ -80,6 +92,7 @@ const CustomPortfolio = (props) =>{
             domainName:domainName.enteredValue,
             referenceSites:referenceSites.enteredValue,
             imageLink:imageLink.enteredValue,
+            time: new Date()
         }))
     }
 

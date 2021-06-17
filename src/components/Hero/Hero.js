@@ -40,7 +40,7 @@ const Hero = () =>{
                 Stunning portfolios for everyone
             </span>
             <span className={classes.hero__main__description}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                Ever wanted to impress your employers with a modern website that is made for, about you and that talks all about you? Want a small corner in the internet reserved just for you? Well we have the solution for that!
             </span>
             <div className={classes.hero__btns}>
                 <button className={classes['hero__main-btn']} onClick={showMeClickHandler}> 

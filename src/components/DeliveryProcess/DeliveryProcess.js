@@ -21,37 +21,37 @@ const DeliveryProcess = (props) => {
                 backgroundColor='#A8FFC0'
                 number='1' 
                 header='You place order for the site'
-                summary='Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                summary='The order is then recieved by one of our wizards(they call them programmers or something nowadays, idk).'
                 svg={orderSVG}/>
             <ProcessItem 
                 backgroundColor='#FFF384'
                 number='2' 
                 header='A representative contacts you via whatsapp'
-                summary='Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                summary='One of the wizards contacts you via whatsapp so as to make your corner of the internet the paradise that you want it to be'
                 svg={whatsappSVG}/>
             <ProcessItem 
                 backgroundColor='#FFB48A'
                 number='3' 
                 header='We create your site in less than a week'
-                summary='Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                summary='The wizard, with the help of other wizards make your site according your directions in the shortest time possible'
                 svg={wwwSVG}/>
             <ProcessItem 
                 backgroundColor='#FFA3A3'
                 number='4' 
                 header='You review the site'
-                summary='Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                summary="The wizard sends a the website created by you at certain intervals so as to assure that we're on the same page"
                 svg={customerReviewSVG}/>
             <ProcessItem 
                 backgroundColor='#9DD0FF'
                 number='5' 
                 header='The payment transation is made'
-                summary='Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                summary='The payment is made through any mode comfortable for the user. UPI payments can be preferred'
                 svg={debitCardSVG}/>
             <ProcessItem 
                 backgroundColor='#FFB1F7'
                 number='6' 
                 header='We upload the site'
-                summary='Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                summary='We upload the site to the internet so that everyone can enjoy your corner of the internet.'
                 svg={cloudSVG}/>
 
         </div>

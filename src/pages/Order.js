@@ -37,6 +37,8 @@ const Order = (props) => {
     const history = useHistory();
     const dispatch = useDispatch();
 
+    dispatch(portfolioActions.loadOrderCount());
+
     const http = useHttp('orders',{method:'POST'});
     const name = useInput(emptyValidate,'');
     const profession = useInput(emptyValidate,'');
@@ -45,9 +47,9 @@ const Order = (props) => {
     const domain = useInput(emptyValidate,'');
 
     const order = useSelector(state=> state.order);
+    const orderCount = useSelector(state=> state.orderCount);
 
     const [domainNeeded, setDomainNeeded] = useState(true);
-
 
     const answers = useInput(()=>{},{});
 
@@ -60,10 +62,15 @@ const Order = (props) => {
         
     }, []);
 
-    useEffect(()=>{
+    useEffect(async ()=>{
         if(order.portfolio){
-            http.fetchData(order);
-            alert('Your order has been successfully placed');
+            await http.fetchData(order);
+            if(http.error){
+                alert('Something went wrong...');
+            } else {
+                alert('Your order has been successfully placed');
+                history.replace('/home/pre-designed')
+            }
         }
     }, [order])
 
@@ -74,8 +81,8 @@ const Order = (props) => {
             alert('Input cannot be blank');
             return;
         }
-
-        if(localStorage.getItem('order')){
+        //Here
+        if(orderCount>5){
             alert('Your previous order has not been processed yet. Please wait...');
             return;
         }
@@ -87,6 +94,7 @@ const Order = (props) => {
             email:email.enteredValue,
             answers:answers.enteredValue,
             portfolio:portfolio,
+            time:new Date()
         };
 
         dispatch(portfolioActions.addOrder(order));

@@ -9,6 +9,8 @@ const initialState = {
     workWithUs:{},
     order:{},
     customOrder:{},
+    orderCount:0,
+    customOrderCount:0
 };
 
 const portfolioSlice = createSlice({
@@ -28,8 +30,14 @@ const portfolioSlice = createSlice({
             state.workWithUs=action.payload;
             localStorage.setItem('workWithUs', true);
         },
-        loadOrder(state){
-            const order = localStorage.getItem('order');
+        loadOrderCount(state, action){
+            const orderCount = localStorage.getItem('orderCount');
+            if(orderCount){
+                state.orderCount = orderCount;
+            }
+        },
+        loadOrdering(state){
+            const order = localStorage.getItem('ordering');
             const customOrder = localStorage.getItem('orderCustom');
             if(order){
                 state.ordering = order;
@@ -40,19 +48,30 @@ const portfolioSlice = createSlice({
         },
         addOrdering(state, action){
             state.ordering = action.payload;
-            localStorage.setItem('ordering',action.payload);
-
-            console.log(action.payload);
+            localStorage.setItem('ordering', action.payload)
         },
         addOrder(state, action){
             state.order = action.payload;
-            localStorage.setItem('order',action.payload);
+            const prev=localStorage.getItem('orderCount');
+            if(prev){
+                
+                localStorage.setItem('orderCount',parseInt(prev)+1)
+            }else{
+                localStorage.setItem('orderCount',1);
+            }
+            console.log(action.payload);
             //Implement
         },
         addCustomOrder(state, action){
             state.orderingCustom = action.payload;
             console.log(action.payload);
-            localStorage.setItem('orderCustom',action.payload)
+
+            const prev=localStorage.getItem('orderCount');
+            if(prev){
+                localStorage.setItem('orderCount', parseInt(prev)+1)
+            }else{
+                localStorage.setItem('orderCount',1);
+            }
         },
     }
 });

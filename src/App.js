@@ -11,7 +11,8 @@ import { useEffect } from 'react';
 function App() {
   const dispatch = useDispatch();
 
-  dispatch(portfolioActions.loadOrder());
+  dispatch(portfolioActions.loadOrdering());
+  dispatch(portfolioActions.loadOrderCount());
 
   const httpReviewLoader = useHttp('reviews',{method:'GET'});
 
