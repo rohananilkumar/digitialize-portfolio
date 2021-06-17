@@ -1,0 +1,22 @@
+.display{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin:40px;
+}
+.lead__image{
+    height: 600px;
+    width: 400px;
+    z-index: 1;
+}
+.left__image{
+    height: 500px;
+    width: 300px;
+    margin-right:-50px;
+
+}
+.right__image{
+    height: 500px;
+    width: 300px;
+    margin-left:-50px;
+}

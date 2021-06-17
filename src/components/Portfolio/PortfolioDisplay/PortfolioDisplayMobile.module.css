@@ -1,0 +1,35 @@
+
+
+.display__mobile{
+
+}
+
+.display__mobile__imagetrack img{
+    width:400px;
+    height: 600px;
+    margin:20px;
+
+}
+
+.display__mobile__imagetrack{
+
+}
+
+.display__mobile__controls{
+    display: flex;
+    justify-content: center;
+
+}
+
+.display__mobile__button{
+    background-color: #C4C4C4;
+    width:20px;
+    height: 20px;
+    border-radius: 100%;
+    margin:10px 10px;
+    margin-bottom: 50px;
+}
+
+.display__mobile__button__selected{
+    background-color:grey;
+}

@@ -1,0 +1,21 @@
+.step{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding:10px;
+    width:60%;
+}
+
+.step__text{
+    margin-left:20px;
+
+}
+
+.step svg{
+    width:80px;
+    height: 80px;
+}
+@media (max-width:1000px) {
+    .step{
+        width:90%
+    }
+}

@@ -1,0 +1,69 @@
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 79px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    width:440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px 0;
+}
+
+.card img{
+    width:90%;
+    margin:20px;
+}
+
+.card__data{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 20px 20px 20px;
+}
+
+.card__data header{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 35px;
+    width:90%;
+    color: #000000;
+}
+
+.card__data .portfolio__summary{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 19px;      
+    margin: 10px 0;
+
+    width: 100%; 
+}
+
+.card__data .price{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 27px;
+    line-height: 33px;
+
+    color: #FF1F00;
+}
+
+.bottom__flex{
+    display: flex;
+    justify-content: space-between;
+    width:100%
+}
+
+@media (max-width: 1000px) {
+    .card{
+        width:400px;
+    }
+    .card__data{
+        margin: 20px;
+        margin-top: 0;
+    }
+}

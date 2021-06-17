@@ -1,0 +1,11 @@
+.portfolio{
+    align-items: center;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+
+}
+.portfolio section{
+    display: inline-block;
+    margin: 20px 0;
+}

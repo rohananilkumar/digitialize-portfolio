@@ -1,0 +1,27 @@
+.form__input{
+    display: flex;
+    flex-direction: column;
+    margin:10px
+
+}
+
+.form__input__label{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+
+    color: #000000;
+
+}
+
+.form__input__input{
+    background: #FFFFFF;
+    border: 1px solid #4838FF;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding:5px;
+    height: 100%;
+}
+

@@ -1,0 +1,154 @@
+.hero{
+    min-width: 100vw;
+    min-height: 100vh;;
+    position: relative
+}
+
+.hero svg{
+    width:100%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -11;
+}
+
+.hero__main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.hero__main__header{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    color: #0D0D0D;
+    line-height: 72px;
+
+}
+
+.hero__main__description{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: start;    
+    color: #000000;
+}
+
+.hero__btns{
+    display: flex;
+    flex-direction: row;
+    width:415px;
+    height: 300px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 20px;
+    height:138px;
+    
+}
+
+.hero__main-btn{
+    background: linear-gradient(90deg, #E100E6 0%, #0D72EA 100%);
+    border-radius: 26px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 39px;
+    /* identical to box height */
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding:10px 40px;
+    color: #FFFFFF;
+
+    transition: box-shadow .3s;
+}
+.hero__main-btn:hover{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.55);
+}
+
+.hero__side-btn{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 26px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 39px;
+    /* identical to box height */
+
+    text-align: center;
+    padding:10px 40px;
+
+    color: #000000;
+
+    transition: background .3s;
+}
+
+.hero__side-btn:hover{
+    background: #d1d1d1;
+
+}
+
+.decorations img{
+    width:300px;
+    height: auto;
+}
+.decorations{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (min-width:1000px) {
+    .hero{
+        width:100vw;
+        min-height: 100vh;
+    }
+    .hero__main{
+        padding: 0 0px;
+        height: 320px;
+
+    }
+    .hero__main__header{
+        font-size: 64px;
+        line-height: 96px;
+
+    }
+    .hero__main__description{
+        text-align: center;
+        width:70%;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .hero__btns{
+        flex-direction: row;
+        height:auto;
+        width:415px;
+        margin-top: 0;
+
+    }
+    .decorations{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .decorations img{
+        width:600px;
+        height: auto;
+    }
+
+    
+}

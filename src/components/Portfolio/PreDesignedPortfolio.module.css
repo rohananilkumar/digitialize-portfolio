@@ -1,0 +1,51 @@
+.predefined_page{
+
+}
+
+.predefined_page__header{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 46px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    
+}
+
+.predefined_page__summary{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 33px;
+    width: 535px;
+    color: #4B4B4B;
+
+}
+
+.portfolio__track{
+    margin: 20px 0;
+}
+
+.horizontal{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 1000px) {
+    .horizontal{
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        
+    }
+    .predefined_page__header{
+        width:400px;
+    }
+    .predefined_page__summary{
+        width:400px;
+
+    }
+}

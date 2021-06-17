@@ -1,0 +1,10 @@
+.section{
+    width:900px;
+    margin: 40px 0;
+}
+
+@media (max-width:1000px) {
+    .section{
+        width: 400px;
+    }
+}

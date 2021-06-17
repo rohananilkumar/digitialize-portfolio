@@ -1,0 +1,32 @@
+
+.name{
+    grid-area: _name;
+}
+
+.email{
+    grid-area: _email;
+}
+
+.data{
+    grid-area: _data;
+    height: 200px;;
+
+}
+.form{
+    display: grid;
+    grid-template-areas: "_name _email"
+                         "_data _data"
+                         "_data _data" ;
+   
+}
+
+.btn{
+    width:50%;
+    margin:10px;
+}
+@media (max-width:1000px) {
+    .form{
+        grid-template-areas: "_name" "_email" "_data";
+    }
+    
+}

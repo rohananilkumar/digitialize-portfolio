@@ -1,0 +1,57 @@
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.25);
+    border-radius: 38px;
+    width:900px;
+    padding-bottom: 50px;
+    margin: 20px 0;
+}
+.step__number{
+    border-radius: 100%;
+    margin:10px;
+    width:50px;
+    height: 50px;
+    background: #6A5FE9;
+    float: left;
+    padding:1px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 46px;
+    text-align: center;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.header{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;;
+    line-height: 46px;
+    /* identical to box height */
+
+
+    color: #616161;
+}
+
+.data{
+    margin:0 70px;
+}
+
+@media (max-width:1000px) {
+    .card{
+        width:400px;
+    }
+    .step__number{
+        float:none
+    }
+    .data{
+        margin: 0 10px;
+    }
+}

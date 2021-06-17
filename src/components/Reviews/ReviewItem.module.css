@@ -1,0 +1,40 @@
+.review__item{
+    background: #F9F9F9;
+    border-left: solid #6A5FE9 40px;
+    margin: 10px 0;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    padding:0 20px;
+    justify-content: center;
+}
+
+.review__item__header{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    /* identical to box height */
+
+    margin-top: -10px;
+    color: #000000;
+}
+
+
+.review__item__summary{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    width:90%;
+    color: #4B4B4B;
+
+}
+
+@media (max-width:1000px) {
+    .review__item{
+        border-left-width:20px;
+    }
+}

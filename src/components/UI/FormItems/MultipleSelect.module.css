@@ -1,0 +1,50 @@
+.multiple__select{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    /* identical to box height */
+    
+    
+    color: #040404;
+}
+
+.multiple__select__header{
+
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+}
+
+.item__button{
+    background: #95ACFF;
+    border-radius: 15px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 36px;
+    padding: 1px 30px;
+    /* identical to box height */
+    margin:10px 10px;
+    
+
+    color: #000000;
+}
+
+.selected{
+    background: #4c73ff;
+}
+
+.alternate{
+    grid-column: 1/span 2;
+}
+
+@media (max-width:1000px) {
+    .item__button{
+        padding: 1px 10px;
+    }
+}

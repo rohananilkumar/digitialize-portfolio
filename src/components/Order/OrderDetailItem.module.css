@@ -1,0 +1,11 @@
+.item{
+    display: flex;
+    justify-content: space-between;
+    width:70%;
+    margin: 10px auto;
+    
+}
+
+.item__header{
+    font-weight: bold;
+}

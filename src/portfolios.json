@@ -1,0 +1,72 @@
+{"portfolio":{"o1":{
+    "title": "Some Name",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "price":"500",
+    "isPremium":false,
+    "images":[
+      "imageLead", "image1", "image2"
+    ],
+    "questions":["What three things do you do? (Skills)",
+    "Name some of your works you’re proud of",
+    "What are your certifications?",
+    "What are some of your achievements that you’re proud of?",
+    "What are some of your goals?",
+    "Resume link (If present)"
+    ],
+    "thumbnail":"image"
+},
+"o2":{
+    "title": "Some Name",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "price":"500",
+    "isPremium":true,
+    "images":[
+      "imageLead", "image1", "image2"
+    ],
+    "questions":["What three things do you do? (Skills)",
+    "Name some of your works you’re proud of",
+    "What are your certifications?",
+    "What are some of your achievements that you’re proud of?",
+    "What are some of your goals?",
+    "Resume link (If present)"
+    ],
+    "thumbnail":"image"
+},
+"o3":{
+    "title": "Some Name",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "price":"500",
+    "isPremium":false,
+    "images":[
+      "imageLead", "image1", "image2"
+    ],
+    "thumbnail":"image"
+}},
+"orders" : {
+    "-McKF8LvrlAP4pMPVf4I" : {
+      "contactNumber" : "asdfasdf",
+      "email" : "asdfasdf",
+      "name" : "asdfasdf",
+      "profession" : "asdfasdf"
+    },
+    "-McKFkB6dzh5FUV5sHVg" : {
+      "contactNumber" : "asdfasdf",
+      "email" : "asdfasdf",
+      "name" : "sadfas",
+      "profession" : "asdfasd"
+    },
+    "-McKG5_A2gOjl-2d2E2f" : {
+      "contactNumber" : "asdf",
+      "email" : "asdf",
+      "name" : "sadf",
+      "profession" : "asdf"
+    }
+  },
+  "reviews" : {
+    "r1" : {
+      "aurhor" : "Robert kwaski",
+      "review" : "One of the best purchases of my life! My collegues and employer was impressed by my portfolio and gave me major advantage over other candidates"
+    }
+  }
+
+}

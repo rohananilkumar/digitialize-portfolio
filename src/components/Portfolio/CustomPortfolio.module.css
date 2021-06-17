@@ -1,0 +1,88 @@
+.image__summary{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    width:50%;
+    color: #4B4B4B;
+    margin: 20px 10px;
+}
+
+.or{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    color: #000000;
+    margin: 10px;
+}
+
+.other-means-btn{
+    background: #C57CFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    display: block;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 36px;
+    /* identical to box height */
+    margin:10px;
+    width:98%;
+
+    color: #000000;
+}
+
+.agree__header{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 36px;
+    /* identical to box height */
+
+    text-align: center;
+    color: #040404;
+    margin: 50px 10px;
+}
+
+.order__btn{
+    background: linear-gradient(90deg, #EB08F0 0%, #2A25FA 100%);
+    border-radius: 18px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+    
+    margin:0 auto;
+    padding:5px 100px;
+
+}
+
+.order__flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.icon__step__list{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+@media (max-width:1000px) {
+    .or{
+        text-align: center;
+    }
+}
